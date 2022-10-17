@@ -10,11 +10,11 @@
 			<title><?php echo $judul; ?></title>
 			
 			<!-- Bootstrap & Font-Awesome CSS -->
-			<link rel="stylesheet" href="<?php echo base_url(); ?>komponen/css/bootstrap.min.css" type='text/css'>
-			<link rel="stylesheet" href="<?php echo base_url(); ?>komponen/css/font-awesome.min.css" type='text/css'>
+			<link rel="stylesheet" href="<?php echo base_url(); ?>komponen/css/bootstrap.min.css" type="text/css">
+			<link rel="stylesheet" href="<?php echo base_url(); ?>komponen/css/font-awesome.min.css" type="text/css">
 			
 			<!-- Custom CSS -->
-			<link rel="stylesheet" href="<?php echo base_url(); ?>komponen/css/style.css" type='text/css'>
+			<link rel="stylesheet" href="<?php echo base_url(); ?>komponen/css/style.css" type="text/css">
 			<link rel="stylesheet" href="<?php echo base_url(); ?>komponen/css/prettyPhoto.css" type='text/css'>
 			<link rel="stylesheet" href="<?php echo base_url(); ?>komponen/css/responsive.css" type='text/css'>
 			
@@ -23,6 +23,8 @@
 			
 			<!-- Google Webfont -->
 			<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel="stylesheet" type='text/css'>
+
+			<!-- Latest compiled and minified CSS -->
 			
 			<!-- js files & script -->
 			<script type="text/javascript" src="<?php echo base_url(); ?>komponen/js/jquery-1.11.1.min.js"></script>
@@ -63,14 +65,25 @@
 										   <a href="index.html"><img src="<?php echo base_url(); ?>komponen/images/tr_logo_black.png" alt=""/></a>
 										</div>
 									</div>
-									<nav class="nav">
+									<nav class="nav"  role="navigation">
 										<a id="menu-toggle" class="anchor-link" href="#"><img src="<?php echo base_url(); ?>komponen/images/nav.png" alt="" /></a>
 										<ul class="nav-list" id="menu">
 											<li><a href="#">Home</a></li>
 											<li><a href="#about" class="scroll">About</a></li>
-											<li><a href="#gallery" class="scroll">Gallery</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle scroll" data-toggle="dropdown" role="button" aria-expanded="false">Gallery <span class="caret"></span></a>
+  												<ul class="dropdown-menu" role="menu">
+											       <li><a href="#">Action</a></li>
+											       <li><a href="#">Another action</a></li>
+											       <li><a href="#">Something else here</a></li>
+											       <li class="divider"></li>
+											       <li><a href="#">Separated link</a></li>
+											       <li class="divider"></li>
+											       <li><a href="#">One more separated link</a></li>
+											    </ul>
+											</li>
 											<!-- logo -->
-											 <li class="logo"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>komponen/images/tr_logo_black.png" alt="" style="width: 71%; margin: 0px 0px 0px 15%;"/></a></li>
+											 <li class="logo"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>komponen/images/ori_tattoo.png" alt="" style="width: 71%; margin: 0px 0px 0px 15%;"/></a></li>
 											<!-- logo -->
 											<li><a href="#faq" class="scroll">Faq</a></li>
 											<li><a href="#find" class="scroll">Find Us</a></li>

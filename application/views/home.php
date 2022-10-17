@@ -272,9 +272,6 @@
 			
 			<section id="testimonial-section"> <!-- Testimonial Section -->
 			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 			
 					 <div class="testimonial wow bounceIn" data-wow-delay="0.0s" id="faq">
 							<div class="container">
