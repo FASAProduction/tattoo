@@ -46,6 +46,32 @@
 			<script>
 				 new WOW().init();
 			</script>
+
+			<style>
+				.dropdown-menu{
+					color: #000;
+				}
+				.dropdown:hover .dropdown-menu{
+					display: block;
+					color: #000;
+				}
+
+				.sepan{
+					color: #000;
+				}
+
+				.sepan_alt{
+					background-color: #000;
+					padding: 4px 10px 10px 28px;
+					border-radius: 15px 15px 15px 15px;
+					display: none;
+					margin: 7px 4px -7px -7px;
+				}
+
+				.sepan:hover .sepan_alt{
+					display: block;
+				}
+			</style>
 			
 		</head>
 		<body>
@@ -53,7 +79,6 @@
             <header id="header"> <!-- Header Part -->
 			
 			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
 			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 			
 					<div class="header">
@@ -71,15 +96,13 @@
 											<li><a href="#">Home</a></li>
 											<li><a href="#about" class="scroll">About</a></li>
 											<li class="dropdown">
-												<a href="#" class="dropdown-toggle scroll" data-toggle="dropdown" role="button" aria-expanded="false">Gallery <span class="caret"></span></a>
-  												<ul class="dropdown-menu" role="menu">
-											       <li><a href="#">Action</a></li>
-											       <li><a href="#">Another action</a></li>
-											       <li><a href="#">Something else here</a></li>
-											       <li class="divider"></li>
-											       <li><a href="#">Separated link</a></li>
-											       <li class="divider"></li>
-											       <li><a href="#">One more separated link</a></li>
+											   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gallery <span class="caret"></span></a>
+											    <ul class="dropdown-menu" role="menu">
+											    	<?php
+											    	foreach($galeri as $gg):
+											    	?>
+											       <li><a href="#" style="color:#000;"><?php echo $gg->product_name; ?></a></li>
+											       <?php endforeach; ?>
 											    </ul>
 											</li>
 											<!-- logo -->

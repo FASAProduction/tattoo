@@ -90,6 +90,14 @@ ul.nav-list li a:hover {
 	padding-bottom: 3px;
 }
 
+.scrolla{
+	display: block;
+}
+
+.scrolla:hover .dropdown-menu {
+	display: block;
+}
+
 ul.nav-list li.dropdown-menu: hover{
 	display: block;
 }

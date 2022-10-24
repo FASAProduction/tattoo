@@ -11,9 +11,11 @@ class Home extends CI_Controller {
     }
 
     public function index(){
-        $head['judul'] = 'Studio Tattoo Bali';
+        $head['judul'] = 'Three Fals | Bistro & Tattoo Studios';
+        $head['galeri'] = $this->db->query("SELECT * FROM products")->result();
+        $data['galeri'] = $this->db->query("SELECT * FROM products")->result();
 		$this->load->view('templ/head', $head);
-		$this->load->view('home');
+		$this->load->view('home', $data);
 		$this->load->view('templ/foot');
     }
 
