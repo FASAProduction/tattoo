@@ -2,19 +2,23 @@
 			
 					<div class="container-fluid">  
 						<div class="row" id="about">
-							<div class="col-md-6 about_left">
-							     <a href="#" class="button-one about_btn button-type-one button-box">About Us</a>
-							</div>
-							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s">
-								  <div class="about_text">
-										<img src="<?php echo base_url(); ?>komponen/images/tatto.png" class="img-responsive" alt=""/>
-										<h3>Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero. </p>
-										<p>Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et risus.</p>
-								  </div>
-							</div>
-						</div> 
-					 
+							<div class="col-md-12 wow fadeInUp ruang" data-wow-delay="0.0s">
+							     <div class="row">
+								     	<div class="col-md-7">
+								     		<a href="#" class="button-one about_btn button-type-one button-box">About Us</a>
+								     	</div>
+								     	<div class="col-md-5">
+								     		<div class="about_text">
+												<img src="<?php echo base_url(); ?>komponen/images/tatto.png" class="img-responsive" alt=""/>
+												<h3>Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<p class="putiha">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero. </p>
+												<p class="putiha">Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et risus.</p>
+									  		</div>
+							    		</div>
+									</div>
+								</div>
+							</div> 
+					 	</div>
 					</div>  
             </section>
 
@@ -292,42 +296,46 @@
 			<h2 class="w3-validation">For W3 Validation</h2>
 			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 			
-			        <div class="contact"  data-wow-delay="0.0s" id="contact">
+			        <div class="contact" style="margin: 0px 0px 0px 0px;"  data-wow-delay="0.0s" id="contact">
 					       	<div class="container">
-					       			<div class="col-md-2"></div>
+					       			<div class="col-md-4"></div>
 							       	<div class="col-md-8 wow fadeInLeft">
    			                            <a href="#" class="button-one contact_btn button-type-one button-box">Contact Us</a>
-   			                            <h4>Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+   			                            <h4 style="color:#fff;">For more information, you can contact us here.</h4>
 										<div class="contact-info">
 												<ul class="contact-list-one">
-												   <li><h5>Info:</h5></li>
-												   <li>Phone : <span class="bold">+ 123-456-789-456</span></li>
-												   <li>Fax : <span class="bold">+ 123-456-789-456</span></li>
-												   <li>Email : <a href="mailto:threefalsetattoostudio@gmail.com"> threefalsetattoostudio@gmail.com</a></li>
-												   <li>Address : <span class="bold">1234 Street Road, City Name</span></li>
+												   <li style="color: #fff;">Email : <a href="mailto:threefalsetattoostudio@gmail.com"> <font color="#fff"> threefalsetattoostudio@gmail.com</font></a></li>
 												</ul>
+												<!--
 												<ul class="contact-list-two">
 												   <li><h5>Work Hours:</h5></li>
 												   <li>Monday-Friday : <span class="bold">09am - 18pm</span></li>
 												   <li>SaturdaY : <span class="bold">09am - 1pm</span></li>
 												   <li>Sunday : <span class="bold">closed</span></li>
 												</ul>
+											-->
 												<div class="clearfix"> </div>
 										</div>
 										<br/>
 										<div class="row">
-											<div class="col-md-3">
-												<a href="https://www.facebook.com/profile.php?id=100086764029426" class="sepan"><i class="fa-brands fa-facebook fa-2x"></i></a>
-												<span class="sepan_alt">Three Fals Official Facebook Fanpage</span>
+											<div class="col-md-2">
+												<a href="https://www.facebook.com/profile.php?id=100086764029426" class="sepan"><i class="fa-brands fa-facebook fa-2x"></i>
+												<span class="sepan_alt"><?php echo $title; ?> Official Facebook Fanpage</span>
+												</a>
 											</div>
-											<div class="col-md-3">
-												<a href="https://instagram.com/three_false_tattoo_studio?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2x"></i></a>
+											<div class="col-md-2">
+												<a href="https://instagram.com/three_false_tattoo_studio?igshid=YmMyMTA2M2Y=" class="sepan"><i class="fa-brands fa-instagram fa-2x"></i>
+												<span class="sepan_alt"><?php echo $title; ?> Official Instagram</span></a>
 											</div>
-											<div class="col-md-3">
-												<a href="http://tiktok.com/@threefalsetattoostudio"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+											<div class="col-md-2">
+												<a href="http://tiktok.com/@threefalsetattoostudio" class="sepan"><i class="fa-brands fa-tiktok fa-2x"></i>
+													<span class="sepan_alt"><?php echo $title; ?> Official Tiktok</span>
+												</a>
 											</div>
-											<div class="col-md-3">
-												<a href="https://wa.link/fxdhqg"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+											<div class="col-md-2">
+												<a href="https://wa.link/fxdhqg" class="sepan"><i class="fa-brands fa-whatsapp fa-2x"></i>
+													<span class="sepan_alt"><?php echo $title; ?> Official WhatsApp</span>
+												</a>
 											</div>
 										</div>
 									</div>

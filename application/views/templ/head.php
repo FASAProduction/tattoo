@@ -57,19 +57,32 @@
 				}
 
 				.sepan{
-					color: #000;
+					color: #fff;
 				}
 
 				.sepan_alt{
-					background-color: #000;
+					background-color: #fff;
 					padding: 4px 10px 10px 28px;
 					border-radius: 15px 15px 15px 15px;
 					display: none;
 					margin: 7px 4px -7px -7px;
+					color: #000;
 				}
 
 				.sepan:hover .sepan_alt{
 					display: block;
+				}
+
+				.ruang{
+					padding: 0px 0px 126px 65px;
+					background: url("<?php echo base_url(); ?>komponen/images/about_bg.png");
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 206px;
+				}
+
+				.putiha{
+					color: #fff;
 				}
 			</style>
 			

@@ -8,18 +8,10 @@
 					<div class="row">
 					    <nav class="footer-nav">
 						    <ul class="nav-list wow fadeInDown" id="footer-menu">
-							    <li><a href="#">Home</a></li>
-								<li><a href="#about" class="scroll">About</a></li>
-								<li><a href="#gallery" class="scroll">Gallery</a></li>
-								<!-- logo -->
-								<li class="logo"><a href="index.html"><img src="<?php echo base_url(); ?>komponen/images/ori_tattoo.png" style="width: 46%;" alt=""/></a></li>
-								<!-- logo -->
-								<li><a href="#faq" class="scroll">Faq</a></li>
-								<li><a href="#find" class="scroll">Find Us</a></li>
-								<li><a href="#contact" class="scroll">Contact</a></li>
+								<li class="logo"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>komponen/images/ori_tattoo.png" style="width: 31%; margin: 0px 0px 0px 209px;" alt=""/></a></li>
 							</ul>
 						</nav>
-						<p class="copyright wow fadeInUp">&copy; <?php echo date('Y'); ?> ThreeFals. All Right Reserved.</p>
+						<p class="copyright wow fadeInUp">&copy; <?php echo date('Y'); ?> <?php echo $title; ?>. All Right Reserved.</p>
 					</div>
 				</div>
 			</section>
