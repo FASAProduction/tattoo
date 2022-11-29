@@ -45,7 +45,6 @@ button {
     font-size: 40px;
 }
 .header {
-	background: url(../images/headerr.jpg)no-repeat center top;
 	background-size: 100% 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -113,7 +112,7 @@ ul.nav-list li.dropdown-menu: hover{
     margin-right: 10px;
     float: right; 
   }
-#mobile-nav { display:none; }
+#mobile-nav { display:block; }
 /***--- About Section ---***/
 #about-section{
     display: block;
@@ -842,6 +841,7 @@ ul.popup_links.g_links {
 .contact_btn{
 	position: relative;
 	z-index: 1;
+	width: 71%;
 }
 ul.contact-list-one {
 	float: left;
